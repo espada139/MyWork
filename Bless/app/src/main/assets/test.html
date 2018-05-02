@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>TestJs</title>
+     <script>
+
+         function show_message(){
+            alert("dd");
+         }
+
+         function call_android(){
+            <!--test_js.test("kk");-->
+            document.location = 'js://webview?arg1=000&arg2=111';
+         }
+
+         function get_android_return(result){
+            alert(result);
+         }
+
+     </script>
+ </head>
+ <body>
+
+    <button style="width:200,height:40" type="button" id='call_android' onclick='call_android()'>CallAndroid</button>
+
+ </body>
+</html>

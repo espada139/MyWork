@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bless</string>
+
+    <string name="navigation_view_header_title">Bless</string>
+    <string name="list_title">List</string>
+
+</resources>
