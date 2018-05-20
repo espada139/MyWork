@@ -13,6 +13,7 @@ import org.robolectric.annotation.Config;
 import static junit.framework.Assert.assertNotNull;
 
 /**
+ *Robolectric测试
  * Created by xiaocai on 2018/5/9.
  */
 @RunWith(RobolectricTestRunner.class)
