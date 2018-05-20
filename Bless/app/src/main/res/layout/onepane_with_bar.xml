@@ -6,15 +6,40 @@
     >
 
     <TextView
+        android:id="@+id/leftbar_tv"
         android:layout_width="100dp"
         android:layout_height="match_parent"
         android:text="LeftBar"
         />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="onepane_with_bar"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/right_bar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onepane_with_bar"
+            />
+
+        <EditText
+            android:id="@+id/test_input_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:hint="Name"
+            />
+
+        <Button
+            android:id="@+id/save_test"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="保存"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

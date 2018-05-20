@@ -24,12 +24,17 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
 //    compile 'com.android.support:appcompat-v7:27.+'
     compile 'com.android.support:appcompat-v7:27.1.0'
+    implementation "com.android.support:support-v4:27.1.0"
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
     implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
 
@@ -39,5 +44,9 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.2'
 
     testCompile 'junit:junit:4.12'
-
+    testCompile "org.mockito:mockito-core:2.8.9"
+    testCompile "org.powermock:powermock-module-junit4:1.7.3"
+    testCompile "org.powermock:powermock-module-junit4-rule:1.7.3"
+    testCompile "org.powermock:powermock-api-mockito2:1.7.3" //注意这里是mockito2
+    testCompile "org.powermock:powermock-classloading-xstream:1.7.3"
 }
